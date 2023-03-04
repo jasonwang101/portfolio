@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v3.6.0
       - run: npm ci
       - run: npm run build --prod
-      - run: cd ${{ GITHUB_WORKSPACE }}
+      - run: cd ${{ github.workspace }}
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
