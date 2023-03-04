@@ -27,6 +27,5 @@ jobs:
         uses: actions/setup-node@v3.6.0
       - run: npm ci
       - run: npm run build --prod
-      - run: docker build .
-      - run: cd ${{ github.workspace }}
-      - run: docker build .
+      - run: docker build . -t jasonwang101/portfolio:latest
+      - run: docker push jasonwang101/portfolio:latest
