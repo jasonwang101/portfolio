@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js and run tests
         uses: actions/setup-node@v3.6.0
       - run: npm ci
-      - run: npm run build --configuration production
+      - run: npm run build --prod
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
