@@ -3,7 +3,7 @@ name: Docker Build Push
 on:
   push:
     branches:
-      - 'feature/docker'
+      - main
   pull_request:
     branches:
       - main
